@@ -1,7 +1,7 @@
 # MelodyVerse
 
 <p align="center">
-  <img src="public/melodyVerseLogo.svg" alt="MelodyVerse Logo" width="200" height="200"/>
+  <img src="https://raw.githubusercontent.com/MelodyVerse281/MelodyVerse/refs/heads/main/melodyVerseLogo.svg" alt="MelodyVerse Logo" width="200" height="200"/>
 </p>
 
 <p align="center">
