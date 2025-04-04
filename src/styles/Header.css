@@ -1,0 +1,98 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(20, 20, 50, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 0.8rem;
+}
+
+.app-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(90deg, #9e69fd, #64c2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.wallet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wallet-btn {
+  background: linear-gradient(90deg, #9e69fd, #64c2ff) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.wallet-btn:hover {
+  opacity: 0.9 !important;
+  transform: translateY(-2px) !important;
+}
+
+.wallet-address {
+  font-size: 0.7rem;
+  color: #b3b3cc;
+  margin-top: 0.2rem;
+}
+
+/* 覆盖 Solana 钱包适配器样式 */
+.wallet-adapter-button {
+  border-radius: 6px !important;
+  height: auto !important;
+  padding: 10px 20px !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.wallet-adapter-dropdown {
+  width: auto !important;
+}
+
+.nav-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #b3b3cc;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .wallet-container {
+    margin-bottom: 0.5rem;
+  }
+}

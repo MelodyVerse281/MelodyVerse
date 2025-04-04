@@ -1,0 +1,146 @@
+.music-generator {
+  background-color: rgba(30, 30, 70, 0.4);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.music-generator h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+}
+
+.text-input {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  background-color: rgba(15, 15, 40, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: rgba(158, 105, 253, 0.6);
+  box-shadow: 0 0 0 2px rgba(158, 105, 253, 0.3);
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.generate-btn {
+  background: linear-gradient(90deg, #9e69fd, #64c2ff);
+  color: white;
+  font-weight: 600;
+  flex: 1;
+}
+
+.generate-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(100, 194, 255, 0.3);
+}
+
+.mint-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-weight: 500;
+  flex: 1;
+}
+
+.mint-btn:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.emotion-display {
+  background-color: rgba(15, 15, 40, 0.6);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+.emotion-display h4 {
+  font-size: 1rem;
+  color: #b3b3cc;
+  margin-bottom: 0.8rem;
+}
+
+.emotion-display p {
+  font-size: 0.9rem;
+  color: #8888aa;
+  margin-bottom: 0.5rem;
+}
+
+.emotion-display p span {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* NFT 历史记录样式 */
+.mint-history {
+  background-color: rgba(15, 15, 40, 0.6);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.mint-history h4 {
+  font-size: 1rem;
+  color: #b3b3cc;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.mint-history h4::before {
+  content: '🎵';
+  margin-right: 0.5rem;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-name {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.history-address {
+  color: #8888aa;
+  font-size: 0.8rem;
+  font-family: monospace;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+} 
